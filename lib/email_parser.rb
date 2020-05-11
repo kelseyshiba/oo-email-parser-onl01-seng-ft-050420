@@ -28,3 +28,5 @@ class EmailAddressParser
   #   @@emails
   # end
 end
+
+parse("avi@test.com, avi@test.com")
