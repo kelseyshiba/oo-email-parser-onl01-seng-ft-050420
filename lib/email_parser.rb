@@ -14,6 +14,7 @@ class EmailAddressParser
   def parse
     # parsed = @emails.split(/,| /).filter {|a| a != ""}
     emails.split.map {|email| email.split(/,| /)}.flatten.uniq
+    binding.pry
   end
     
 # def parse
