@@ -15,6 +15,7 @@ class EmailAddressParser
   def parse
     parsed = @emails.split(/,| /).filter {|a| a != ""}
     new_emails = parsed.reject {|a,b| a == b}
+    binding.pry
     @@emails << new_emails
   end
   
