@@ -19,8 +19,9 @@ class EmailAddressParser
   #   @@emails << new_emails
   # end
 
-def parse
-  parsed = @emails.split(/,| /).filter {|a| a !=""}
-  new_emails = parsed.uniq!
-  binding.pry
+  def parse
+    parsed = @emails.split(/,| /).filter {|a| a !=""}
+    new_emails = parsed.uniq!
+    binding.pry
+  end
 end
