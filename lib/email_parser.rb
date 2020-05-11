@@ -21,8 +21,11 @@ class EmailAddressParser
 
   def parse
     parsed = @emails.split(/,| /).filter {|a| a !=""}
+    new_emails = []
     parsed.collect do |dups|
-    binding.pry
+      if dups != dups
+        new_emails << dups
+      end
     end
     @@emails << new_emails
   end
