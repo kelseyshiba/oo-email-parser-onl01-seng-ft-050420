@@ -21,7 +21,7 @@ class EmailAddressParser
 
   def parse
     parsed = @emails.split(/,| /).filter {|a| a !=""}
-    new_emails = parsed.uniq.flatten
+    new_emails = parsed.flatten.uniq
     @@emails << new_emails
   end
 end
