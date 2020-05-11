@@ -29,4 +29,3 @@ class EmailAddressParser
   # end
 end
 
-self.parse("avi@test.com, avi@test.com")
