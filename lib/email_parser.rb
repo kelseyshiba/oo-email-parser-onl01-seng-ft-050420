@@ -12,9 +12,9 @@ class EmailAddressParser
   end
   
     
-  def parse
+ def parse
     parsed = @emails.split(/,| /).filter {|a| a != ""}
-    new_emails = parsed.uniq!
+    new_emails = parsed.reject {|a,b| a == b}
     @@emails << new_emails
     @@emails.flatten
   end
