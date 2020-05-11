@@ -22,7 +22,7 @@ class EmailAddressParser
   def parse
     parsed = @emails.split(/,| /).filter {|a| a !=""}
     parsed.collect do |dups|
-      if dups != dups
+      if dups.uniq
         @@emails << dups
       end
     end
