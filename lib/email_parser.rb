@@ -11,12 +11,15 @@ class EmailAddressParser
     @emails = emails
   end
   
-    
- def parse
-    parsed = @emails.split(/,| /).filter {|a| a != ""}
-    @@emails << parsed
-    @@emails.flatten.uniq
+  def parse
+  
   end
+    
+# def parse
+#     parsed = @emails.split(/,| /).filter {|a| a != ""}
+#     @@emails << parsed
+#     @@emails.flatten.uniq
+#   end
 
   # def parse
   #   parsed = @emails.split(/,| /).filter {|a| a !=""}
